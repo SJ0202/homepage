@@ -5,6 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     ],
   theme: {
+    fontFamily: {
+      EliceBold: 'EliceDigitalBaeum_Bold, monospace',
+      EliceRegular: 'EliceDigitalBaeum_Regular, monospace',
+      AggroBold: 'SBAggroB, cursive',
+      SuitMedium: 'SUIT-Medium, sans-serif'
+    },
     extend: {},
   },
   plugins: [],
