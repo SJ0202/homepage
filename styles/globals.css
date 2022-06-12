@@ -9,6 +9,7 @@ body {
 }
 
 @layer base {
+    /* [tailwind.config.js] font-family */
     @font-face {
         font-family: 'EliceDigitalBaeum_Bold';
         src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2") format('woff2');
@@ -29,11 +30,35 @@ body {
         font-weight: normal;
         font-style: normal;
     }
+
+    h1 {
+      @apply text-[25px] md:text-[40px] xl:text-[45px] text-black font-EliceBold
+    }
+  
+    h2 {
+      @apply text-[20px] md:text-[25px] xl:text-[30px] text-gray-700 font-EliceRegular
+    }
 }
 
 @layer components {
   .full-screen {
     @apply w-full h-full
+  }
+
+  .text-center-center {
+    @apply flex flex-col justify-center items-center text-center
+  }
+
+  .text-left-bottom {
+    @apply flex flex-col justify-end items-start text-left
+  }
+
+  .text-left-center {
+    @apply flex flex-col justify-center items-start text-left
+  }
+
+  .text-right-center {
+    @apply flex flex-col justify-center items-end text-right
   }
 }
 
