@@ -32,11 +32,11 @@ body {
     }
 
     h1 {
-      @apply text-[25px] md:text-[40px] xl:text-[45px] text-black font-EliceBold
+      @apply text-[24px] md:text-[39px] xl:text-[44px] text-black font-EliceBold
     }
   
     h2 {
-      @apply text-[20px] md:text-[25px] xl:text-[30px] text-gray-700 font-EliceRegular
+      @apply text-[19px] md:text-[24px] xl:text-[29px] text-gray-700 font-EliceRegular
     }
 }
 
@@ -59,6 +59,14 @@ body {
 
   .text-right-center {
     @apply flex flex-col justify-center items-end text-right
+  }
+
+  .index-btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-EliceRegular rounded justify-center items-center py-2 px-4
+  }
+
+  .index-trans-btn {
+    @apply bg-transparent hover:bg-gray-400 text-black font-EliceRegular rounded justify-start items-center py-2 px-3
   }
 }
 
